@@ -8,7 +8,8 @@ class Mtgtop8Db():
     # Suggested choices are subsets of last two months' decks:
     # [['ST', 10], ['PI', 7], ['MO', 12], ['LE', 10],['VI', 3], ['cEDH', 5], ['EDH', 8], ['PAU', 6]]
 
-    pool_list = []
+    pool_list = [['ST', 10], ['PI', 7], ['MO', 12], ['LE', 10],
+                 ['VI', 3], ['cEDH', 5], ['EDH', 8], ['PAU', 6]]
 
     # db filename, will be saved in .\data\:
 
@@ -18,7 +19,7 @@ class Mtgtop8Db():
 
     json_path = 'default-cards-20220606210607.json'
 
-    load_cards_data = True
+    load_cards_data = False
 
     def __init__(self, **kwargs) -> None:
         self.__dict__.update(kwargs)
